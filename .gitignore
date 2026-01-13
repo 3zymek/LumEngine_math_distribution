@@ -23,7 +23,7 @@
 *.dll
 *.lib
 x64/
-lumengine_math_distribution/
+lumengine_math_distribution/x64
 
 
 =======
