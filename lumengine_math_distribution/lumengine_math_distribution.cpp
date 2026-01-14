@@ -1,11 +1,15 @@
 ﻿#include <iostream>
+#define LUM_MATH_IMPLEMENTATION
+#include "include/lum_mat3.h"
 #include "include/lum_vec2.h"
-int main()
-{
-    Vec2 vector;
-    vector.x = 10;
-    vector.y = 15;
-    vec2_print(&vector);
-    vec2_div_scalar(&vector, 4.123);
-    vec2_print(&vector);
+#include <stdio.h>
+
+int main() {
+	mat3f m;
+	vec2f v;
+	v.x = 100;
+	v.y = 2123;
+	mat3f_identity(&m);
+	mat3f_translate(&m, &v);
+	mat3f_print(&m);
 }
